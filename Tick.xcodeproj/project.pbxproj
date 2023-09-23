@@ -7,23 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E917AC272AB376C300E8F4F7 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917AC262AB376C300E8F4F7 /* AuthenticationModel.swift */; };
+		E917AC292AB376D300E8F4F7 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917AC282AB376D300E8F4F7 /* AuthenticationManager.swift */; };
+		E917AC2D2AB3795300E8F4F7 /* CommonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917AC2C2AB3795300E8F4F7 /* CommonService.swift */; };
+		E917AC312AB379AA00E8F4F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917AC302AB379AA00E8F4F7 /* Constants.swift */; };
 		E99BAFAE2AAA527200C578A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99BAFAD2AAA527200C578A3 /* AppDelegate.swift */; };
 		E99BAFB02AAA527200C578A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99BAFAF2AAA527200C578A3 /* SceneDelegate.swift */; };
-		E99BAFB22AAA527200C578A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99BAFB12AAA527200C578A3 /* ViewController.swift */; };
+		E99BAFB22AAA527200C578A3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99BAFB12AAA527200C578A3 /* WelcomeViewController.swift */; };
 		E99BAFB52AAA527200C578A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99BAFB32AAA527200C578A3 /* Main.storyboard */; };
 		E99BAFB72AAA527300C578A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99BAFB62AAA527300C578A3 /* Assets.xcassets */; };
 		E99BAFBA2AAA527300C578A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99BAFB82AAA527300C578A3 /* LaunchScreen.storyboard */; };
+		E9DE5EC32AABA6C90053013C /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DE5EC22AABA6C90053013C /* InformationViewController.swift */; };
+		E9DE5EC62AABA6F80053013C /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DE5EC52AABA6F80053013C /* SignupViewController.swift */; };
+		E9DE5EC82AABA7180053013C /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DE5EC72AABA7180053013C /* SigninViewController.swift */; };
+		E9DE5ECA2AABA7340053013C /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DE5EC92AABA7340053013C /* TodoViewController.swift */; };
+		E9DE5ED02AAC6AF70053013C /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DE5ECE2AAC6AF70053013C /* TodoCell.swift */; };
+		E9DE5ED12AAC6AF70053013C /* TodoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9DE5ECF2AAC6AF70053013C /* TodoCell.xib */; };
+		E9DE5ED32AAC6B7B0053013C /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DE5ED22AAC6B7B0053013C /* TodoModel.swift */; };
+		E9DE5ED62AB01F810053013C /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DE5ED52AB01F810053013C /* TodoManager.swift */; };
+		E9DE5ED92AB021F00053013C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E9DE5ED82AB021F00053013C /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E917AC262AB376C300E8F4F7 /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		E917AC282AB376D300E8F4F7 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		E917AC2C2AB3795300E8F4F7 /* CommonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonService.swift; sourceTree = "<group>"; };
+		E917AC302AB379AA00E8F4F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E99BAFAA2AAA527200C578A3 /* Tick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99BAFAD2AAA527200C578A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E99BAFAF2AAA527200C578A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E99BAFB12AAA527200C578A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E99BAFB12AAA527200C578A3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E99BAFB42AAA527200C578A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E99BAFB62AAA527300C578A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E99BAFB92AAA527300C578A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E99BAFBB2AAA527300C578A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9DE5EC22AABA6C90053013C /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		E9DE5EC52AABA6F80053013C /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E9DE5EC72AABA7180053013C /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		E9DE5EC92AABA7340053013C /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		E9DE5ECE2AAC6AF70053013C /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		E9DE5ECF2AAC6AF70053013C /* TodoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoCell.xib; sourceTree = "<group>"; };
+		E9DE5ED22AAC6B7B0053013C /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		E9DE5ED52AB01F810053013C /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +56,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9DE5ED92AB021F00053013C /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E917AC2A2AB3793300E8F4F7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E917AC262AB376C300E8F4F7 /* AuthenticationModel.swift */,
+				E917AC282AB376D300E8F4F7 /* AuthenticationManager.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E917AC2B2AB3793A00E8F4F7 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				E9DE5ED22AAC6B7B0053013C /* TodoModel.swift */,
+				E9DE5ED52AB01F810053013C /* TodoManager.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		E917AC322AB379B400E8F4F7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E917AC302AB379AA00E8F4F7 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 		E99BAFA12AAA527200C578A3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +110,47 @@
 			children = (
 				E99BAFAD2AAA527200C578A3 /* AppDelegate.swift */,
 				E99BAFAF2AAA527200C578A3 /* SceneDelegate.swift */,
-				E99BAFB12AAA527200C578A3 /* ViewController.swift */,
-				E99BAFB32AAA527200C578A3 /* Main.storyboard */,
+				E917AC322AB379B400E8F4F7 /* Constants */,
+				E9DE5ED42AAC6C540053013C /* Models */,
+				E9DE5EC42AABA6D30053013C /* Controllers */,
+				E9DE5ECB2AAC6AA90053013C /* Views */,
 				E99BAFB62AAA527300C578A3 /* Assets.xcassets */,
-				E99BAFB82AAA527300C578A3 /* LaunchScreen.storyboard */,
 				E99BAFBB2AAA527300C578A3 /* Info.plist */,
 			);
 			path = Tick;
+			sourceTree = "<group>";
+		};
+		E9DE5EC42AABA6D30053013C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E99BAFB12AAA527200C578A3 /* WelcomeViewController.swift */,
+				E9DE5EC22AABA6C90053013C /* InformationViewController.swift */,
+				E9DE5EC52AABA6F80053013C /* SignupViewController.swift */,
+				E9DE5EC72AABA7180053013C /* SigninViewController.swift */,
+				E9DE5EC92AABA7340053013C /* TodoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E9DE5ECB2AAC6AA90053013C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E99BAFB32AAA527200C578A3 /* Main.storyboard */,
+				E99BAFB82AAA527300C578A3 /* LaunchScreen.storyboard */,
+				E9DE5ECE2AAC6AF70053013C /* TodoCell.swift */,
+				E9DE5ECF2AAC6AF70053013C /* TodoCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9DE5ED42AAC6C540053013C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E917AC2B2AB3793A00E8F4F7 /* Todo */,
+				E917AC2A2AB3793300E8F4F7 /* Authentication */,
+				E917AC2C2AB3795300E8F4F7 /* CommonService.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +169,9 @@
 			dependencies = (
 			);
 			name = Tick;
+			packageProductDependencies = (
+				E9DE5ED82AB021F00053013C /* IQKeyboardManagerSwift */,
+			);
 			productName = Tick;
 			productReference = E99BAFAA2AAA527200C578A3 /* Tick.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +200,9 @@
 				Base,
 			);
 			mainGroup = E99BAFA12AAA527200C578A3;
+			packageReferences = (
+				E9DE5ED72AB021F00053013C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = E99BAFAB2AAA527200C578A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9DE5ED12AAC6AF70053013C /* TodoCell.xib in Resources */,
 				E99BAFBA2AAA527300C578A3 /* LaunchScreen.storyboard in Resources */,
 				E99BAFB72AAA527300C578A3 /* Assets.xcassets in Resources */,
 				E99BAFB52AAA527200C578A3 /* Main.storyboard in Resources */,
@@ -138,9 +231,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E99BAFB22AAA527200C578A3 /* ViewController.swift in Sources */,
+				E99BAFB22AAA527200C578A3 /* WelcomeViewController.swift in Sources */,
 				E99BAFAE2AAA527200C578A3 /* AppDelegate.swift in Sources */,
+				E9DE5ECA2AABA7340053013C /* TodoViewController.swift in Sources */,
+				E9DE5ED32AAC6B7B0053013C /* TodoModel.swift in Sources */,
+				E9DE5EC82AABA7180053013C /* SigninViewController.swift in Sources */,
+				E9DE5ED62AB01F810053013C /* TodoManager.swift in Sources */,
+				E917AC2D2AB3795300E8F4F7 /* CommonService.swift in Sources */,
+				E9DE5ED02AAC6AF70053013C /* TodoCell.swift in Sources */,
 				E99BAFB02AAA527200C578A3 /* SceneDelegate.swift in Sources */,
+				E9DE5EC32AABA6C90053013C /* InformationViewController.swift in Sources */,
+				E917AC292AB376D300E8F4F7 /* AuthenticationManager.swift in Sources */,
+				E917AC312AB379AA00E8F4F7 /* Constants.swift in Sources */,
+				E917AC272AB376C300E8F4F7 /* AuthenticationModel.swift in Sources */,
+				E9DE5EC62AABA6F80053013C /* SignupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,9 +394,12 @@
 				DEVELOPMENT_TEAM = 699B45TF7E;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tick/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tick;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +409,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.satyamsovan123.Tick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,9 +428,12 @@
 				DEVELOPMENT_TEAM = 699B45TF7E;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tick/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tick;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,6 +443,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.satyamsovan123.Tick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,6 +474,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9DE5ED72AB021F00053013C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9DE5ED82AB021F00053013C /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9DE5ED72AB021F00053013C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E99BAFA22AAA527200C578A3 /* Project object */;
 }
