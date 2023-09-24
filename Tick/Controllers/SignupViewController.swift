@@ -47,7 +47,7 @@ class SignupViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "signupToInformation") {
+        if(segue.identifier == K.App.signupToInformation) {
             let destinationViewController = segue.destination as! InformationViewController
             destinationViewController.message = message
         }
@@ -148,9 +148,9 @@ extension SignupViewController: AuthenticationManagerDelegate {
             self.signupButton.configuration?.showsActivityIndicator = false
             self.commonService.logger(authenticationResponse)
             if(self.message == K.successMessage.signupSuccessful) {
-                self.performSegue(withIdentifier: "signupToTodo", sender: self)
+                self.performSegue(withIdentifier: K.App.signupToTodo, sender: self)
             } else {
-                self.performSegue(withIdentifier: "signupToInformation", sender: self)
+                self.performSegue(withIdentifier: K.App.signupToInformation, sender: self)
             }
         }
     }
@@ -159,7 +159,7 @@ extension SignupViewController: AuthenticationManagerDelegate {
         DispatchQueue.main.async {
             self.signupButton.isEnabled = true
             self.signupButton.configuration?.showsActivityIndicator = false
-            self.performSegue(withIdentifier: "signupToInformation", sender: self)
+            self.performSegue(withIdentifier: K.App.signupToInformation, sender: self)
             self.commonService.logger(error)
         }
     }

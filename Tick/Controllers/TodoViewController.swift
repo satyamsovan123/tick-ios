@@ -14,6 +14,8 @@ class TodoViewController: UIViewController {
     var todos: [TodoRequest] = []
     var message: String = K.errorMessage.genericError
     var newTodo: String = ""
+    var newTodoElement = TodoRequest(isComplete: false, todo: "")
+    var action = ""
     
     @IBOutlet weak var todoView: UITableView!
     @IBOutlet weak var deleteAllTodosButton: UIButton!
@@ -35,30 +37,31 @@ class TodoViewController: UIViewController {
     }
     
     @IBAction func addTodoPressed(_ sender: UIButton) {
-        self.disableButtonsAndShowLoader()
-        addTodoTextField.endEditing(true)
-        let newTodo = TodoRequest(isComplete: false, todo: addTodoTextField.text ?? "")
-        todoManager.updateTodos(todoRequest: newTodo, action: "add", token: token)
-        let newTodoElement = TodoRequest(isComplete: false, todo: addTodoTextField.text ?? "")
-        commonService.logger(newTodoElement)
-        todos.append(newTodoElement)
+        if(addTodoTextField.text != "") {
+            self.disableButtonsAndShowLoader()
+            addTodoTextField.endEditing(true)
+            let newTodo = TodoRequest(isComplete: false, todo: addTodoTextField.text ?? "")
+            newTodoElement = TodoRequest(isComplete: false, todo: addTodoTextField.text ?? "")
+            action = "add"
+            todoManager.updateTodos(todoRequest: newTodo, action: action, token: token)
+        }
     }
     
     @IBAction func deleteAllTodos(_ sender: UIButton) {
         self.disableButtonsAndShowLoader()
-        todoManager.updateTodos(todoRequest: nil, action: "delete", token: token)
-
-
+        action = "delete"
+        todoManager.updateTodos(todoRequest: nil, action: action, token: token)
         todos = []
     }
     
     @IBAction func signoutPressed(_ sender: UIBarButtonItem) {
         token = ""
+        action = ""
         navigationController?.popToRootViewController(animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "todoToInformation") {
+        if(segue.identifier == K.App.todoToInformation) {
             let destinationViewController = segue.destination as! InformationViewController
             destinationViewController.message = message
         }
@@ -83,6 +86,7 @@ class TodoViewController: UIViewController {
         self.addTodoButton.configuration?.showsActivityIndicator = false
         self.deleteAllTodosButton.configuration?.showsActivityIndicator = false
     }
+    
 }
 
 extension TodoViewController: TodoManagerDelegate {
@@ -91,7 +95,7 @@ extension TodoViewController: TodoManagerDelegate {
             self.commonService.logger(response)
             self.message = response.message
             if(self.message != K.successMessage.todoRetrivalSuccessful) {
-                self.performSegue(withIdentifier: "todoToInformation", sender: self)
+                self.performSegue(withIdentifier: K.App.todoToInformation, sender: self)
             } else {
                 self.todos = response.data!
                 self.todoView.reloadData()
@@ -104,15 +108,23 @@ extension TodoViewController: TodoManagerDelegate {
     func didUpdateTodos(_ todoManager: TodoManager, response: TodoResponse) {
         DispatchQueue.main.async {
             self.commonService.logger(response)
-  
+            
             self.message = response.message
             if(self.message != K.successMessage.todoAdditionSuccessful &&
                self.message != K.successMessage.todoDeletionSuccessful) {
-                self.performSegue(withIdentifier: "todoToInformation", sender: self)
+                self.performSegue(withIdentifier: K.App.todoToInformation, sender: self)
             } else {
+                self.commonService.logger(self.newTodoElement)
+
+                if(self.action == "add") {
+                    self.todos.append(self.newTodoElement)
+                }
+                
                 self.todoView.reloadData()
                 self.addTodoTextField.text = ""
-                self.showAlert(title: "Success", message: self.message)
+                self.newTodoElement = TodoRequest(isComplete: false, todo: "")
+                self.showAlert(title: K.successMessage.genricSuccessful, message: self.message)
+                self.action = ""
             }
             self.enableButtonsAndHideLoader()
         }
@@ -122,10 +134,11 @@ extension TodoViewController: TodoManagerDelegate {
     func didFailWithError(error: Error) {
         DispatchQueue.main.async {
             self.addTodoTextField.text = ""
+            self.newTodoElement = TodoRequest(isComplete: false, todo: "")
             self.commonService.logger(error)
-
-            self.performSegue(withIdentifier: "todoToInformation", sender: self)
+            self.performSegue(withIdentifier: K.App.todoToInformation, sender: self)
             self.enableButtonsAndHideLoader()
+            self.action = ""
         }
     }
     

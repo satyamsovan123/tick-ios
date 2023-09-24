@@ -49,12 +49,12 @@ class SigninViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "signinToInformation") {
+        if(segue.identifier == K.App.signinToInformation) {
             let destinationViewController = segue.destination as! InformationViewController
             destinationViewController.message = message
         }
         
-        if(segue.identifier == "signinToTodo") {
+        if(segue.identifier == K.App.signinToTodo) {
             let destinationViewController = segue.destination as! TodoViewController
             destinationViewController.token = token
         }
@@ -161,9 +161,9 @@ extension SigninViewController: AuthenticationManagerDelegate {
             self.signinButton.configuration?.showsActivityIndicator = false
             self.commonService.logger(authenticationResponse)
             if(self.message == K.successMessage.signinSuccessful) {
-                self.performSegue(withIdentifier: "signinToTodo", sender: self)
+                self.performSegue(withIdentifier: K.App.signinToTodo, sender: self)
             } else {
-                self.performSegue(withIdentifier: "signinToInformation", sender: self)
+                self.performSegue(withIdentifier: K.App.signinToInformation, sender: self)
             }
         }
     }
@@ -172,7 +172,7 @@ extension SigninViewController: AuthenticationManagerDelegate {
         DispatchQueue.main.async {
             self.signinButton.isEnabled = true
             self.signinButton.configuration?.showsActivityIndicator = false
-            self.performSegue(withIdentifier: "signinToInformation", sender: self)
+            self.performSegue(withIdentifier: K.App.signinToInformation, sender: self)
             self.commonService.logger(error)
         }
     }
